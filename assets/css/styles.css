@@ -1,0 +1,197 @@
+/* 全局樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden; /* 防止水平滾動 */
+}
+
+.hero-section {
+    position: relative;
+    padding: 20px;
+}
+
+.logo-left {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    z-index: 1000;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.text-box {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3 {
+    color: #ffcc00;
+    text-align: center;
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* 遊戲影片 */
+.trailer-video {
+    width: 800px;
+    height: 450px;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* 按鈕樣式 */
+.download-banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-large {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-large:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* 遊戲特色清單樣式 */
+#features ul {
+    list-style-type: none; /* 移除預設清單樣式 */
+    padding: 0;
+}
+
+#features li {
+    margin: 15px 0; /* 條列項目垂直間距 */
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1); /* 條目背景 */
+    border-radius: 8px; /* 圓角樣式 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 陰影效果 */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 圖標與文字間距 */
+}
+
+#features li::before {
+    content: "★"; /* 自定義圖標 */
+    color: #ffcc00; /* 圖標顏色 */
+    font-size: 1.5em; /* 圖標大小 */
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+#features li strong {
+    color: #ffcc00; /* 條目標題顏色 */
+    font-size: 1.2em;
+    white-space: nowrap; /* 防止文字換行 */
+}
+
+#features li p {
+    margin: 0;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+/* 角色介紹樣式 */
+.character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.character-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 下載按鈕樣式 */
+.download-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.btn-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    padding: 20px 10px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-download img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.btn-download:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .logo-left {
+        width: 80px;
+    }
+
+    .text-box {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .character-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-download {
+        width: 100%;
+    }
+}
+
+
+
